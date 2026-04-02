@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Python Programming",
+    "url": "https://www.python.org/",
+    "content": "python programming language ",
+    "category": "Programming"
+  },
+  {
+    "title": "Java Programming",
+    "url": "https://www.oracle.com/java/",
+    "content": "java programming backend android development",
+    "category": "Programming"
+  },
+  {
+    "title": "C Programming",
+    "url": "https://en.cppreference.com/w/c",
+    "content": "c programming language basics low level",
+    "category": "Programming"
+  },
+  {
+    "title": "C++ Programming",
+    "url": "https://isocpp.org/",
+    "content": "c++ programming system software game development",
+    "category": "Programming"
+  },
+  {
+    "title": "JavaScript",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "content": "javascript web frontend backend nodejs",
+    "category": "Programming"
+  },
+  {
+    "title": "TypeScript",
+    "url": "https://www.typescriptlang.org/",
+    "content": "typescript javascript superset frontend development",
+    "category": "Programming"
+  },
+  {
+    "title": "Go Programming",
+    "url": "https://go.dev/",
+    "content": "go golang backend cloud programming",
+    "category": "Programming"
+  },
+  {
+    "title": "Rust Programming",
+    "url": "https://www.rust-lang.org/",
+    "content": "rust systems programming memory safety",
+    "category": "Programming"
+  },
+  {
+    "title": "PHP Programming",
+    "url": "https://www.php.net/",
+    "content": "php web backend scripting",
+    "category": "Programming"
+  },
+  {
+    "title": "Swift Programming",
+    "url": "https://developer.apple.com/swift/",
+    "content": "swift ios app development apple programming",
+    "category": "Programming"
+  },
+  {
+    "title": "Kotlin Programming",
+    "url": "https://kotlinlang.org/",
+    "content": "kotlin android development modern programming",
+    "category": "Programming"
+  },
+  {
+    "title": "C# Programming",
+    "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "content": "csharp dotnet microsoft programming",
+    "category": "Programming"
+  },
+  {
+    "title": "Ruby Programming",
+    "url": "https://www.ruby-lang.org/",
+    "content": "ruby programming web rails development",
+    "category": "Programming"
+  },
+  {
+    "title": "R Programming",
+    "url": "https://www.r-project.org/",
+    "content": "r programming statistics data analysis",
+    "category": "Programming"
+  },
+  {
+    "title": "MATLAB",
+    "url": "https://www.mathworks.com/products/matlab.html",
+    "content": "matlab numerical computing engineering",
+    "category": "Programming"
+  },
+  {
+    "title": "Scala Programming",
+    "url": "https://www.scala-lang.org/",
+    "content": "scala functional programming jvm",
+    "category": "Programming"
+  },
+  {
+    "title": "Dart Programming",
+    "url": "https://dart.dev/",
+    "content": "dart flutter mobile development",
+    "category": "Programming"
+  },
+  {
+    "title": "Shell Scripting",
+    "url": "https://www.gnu.org/software/bash/",
+    "content": "bash shell scripting linux command line",
+    "category": "Programming"
+  },
+  {
+    "title": "SQL",
+    "url": "https://www.mysql.com/",
+    "content": "sql database query language",
+    "category": "Programming"
+  },
+  {
+    "title": "Assembly Language",
+    "url": "https://www.nasm.us/",
+    "content": "assembly low level programming hardware",
+    "category": "Programming"
+  },
+  {
+    "title": "Haskell Programming",
+    "url": "https://www.haskell.org/",
+    "content": "haskell functional programming",
+    "category": "Programming"
+  },
+  {
+    "title": "Elixir Programming",
+    "url": "https://elixir-lang.org/",
+    "content": "elixir functional concurrent programming",
+    "category": "Programming"
+  },
+  {
+    "title": "Julia Programming",
+    "url": "https://julialang.org/",
+    "content": "julia high performance computing",
+    "category": "Programming"
+  },
+  {
+    "title": "Objective-C",
+    "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/",
+    "content": "objective c ios mac development",
+    "category": "Programming"
+  },
+  {
+    "title": "Fortran",
+    "url": "https://fortran-lang.org/",
+    "content": "fortran scientific computing programming",
+    "category": "Programming"
+  }
+]

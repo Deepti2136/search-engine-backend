@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Engine</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 120px;
+        }
+
+        .logo {
+            font-size: 70px;
+            font-weight: bold;
+        }
+
+        .search-box {
+            width: 650px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            border: 1px solid #dcdcdc;
+            border-radius: 30px;
+            padding: 10px;
+            box-shadow: 0px 0px 8px lightgray;
+        }
+
+        .search-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 18px;
+        }
+
+        .icon {
+            color: gray;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .results {
+            width: 60%;
+            margin: auto;
+            text-align: left;
+        }
+
+        a {
+            color: #1a0dab;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="logo">
+  <span style="color:#4285F4">S</span>
+  <span style="color:#EA4335">e</span>
+  <span style="color:#FBBC05">a</span>
+  <span style="color:#4285F4">r</span>
+  <span style="color:#34A853">c</span>
+  <span style="color:#EA4335">h</span>
+  <span style="color:#4285F4"> </span>
+  <span style="color:#EA4335">E</span>
+  <span style="color:#FBBC05">n</span>
+  <span style="color:#4285F4">g</span>
+  <span style="color:#34A853">i</span>
+  <span style="color:#EA4335">n</span>
+  <span style="color:#FBBC05">e</span>
+</div>
+
+<form method="POST" enctype="multipart/form-data">
+
+<div class="search-box">
+    <span class="material-icons icon">search</span>
+
+    <input type="text" id="searchInput" name="query" placeholder="Search...">
+
+    <label for="file-upload" class="material-icons icon">add</label>
+    <input id="file-upload" type="file" name="file" hidden>
+
+    <label for="image-upload" class="material-icons icon">photo_camera</label>
+    <input id="image-upload" type="file" name="image" accept="image/*" hidden>
+
+    <span class="material-icons icon" onclick="startVoice()">mic</span>
+</div>
+
+<button type="submit">Search</button>
+
+</form>
+
+{% if message %}
+<p style="color:green;">{{ message }}</p>
+{% endif %}
+
+<div class="results">
+
+{% if searched and results|length == 0 %}
+    <p style="color:red; text-align:center;">Search not found</p>
+{% endif %}
+
+{% for category, items in results.items() %}
+    <h2>{{ category }}</h2>
+
+    {% for r in items %}
+        <div>
+            <a href="{{ r.url }}" target="_blank">{{ r.title }}</a>
+            <p>{{ r.content }}</p>
+        </div>
+    {% endfor %}
+{% endfor %}
+
+</div>
+
+<script>
+function startVoice() {
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang = "en-US";
+
+    recognition.onresult = function(event) {
+        document.getElementById("searchInput").value = event.results[0][0].transcript;
+    };
+
+    recognition.start();
+}
+</script>
+
+</body>
+</html>
